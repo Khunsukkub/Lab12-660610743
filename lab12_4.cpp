@@ -2,6 +2,9 @@
 
 using namespace std;
 
+template <typename AnyDiDi>
+void mySwap(AnyDiDi &frist, AnyDiDi &sec);
+
 int main(){
 	int x, y;
 	string a, b;
@@ -28,5 +31,15 @@ int main(){
 	cout << "p = " << p << ", q = " << q << "\n";
 
 	return 0;
+}
+
+template <typename AnyDiDi>
+void mySwap(AnyDiDi &frist, AnyDiDi &sec){
+
+	AnyDiDi a = frist;
+
+	frist = sec;
+	sec = a;
+
 }
 
